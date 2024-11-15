@@ -16,29 +16,78 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <style>
 
+      .Button {
+          text-decoration: none;
+          display: inline-block;
+          cursor: pointer;
+      }
+
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 12vw;
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+          border-radius: 1vw;
+          margin-top: 1vh;
+      }
+
+          .dropdown-content a {
+              font-family: "Bebas Neue", cursive;
+              color: black;
+              padding: 5%;
+              text-decoration: none;
+              display: block;
+          }
+
+              .dropdown-content a:hover {
+                  background-color: #ddd;
+              }
+
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+
 
   </style>
 </head>
 
 <body>
-  <nav>
-    <div class="nav1">
-      <ul>
-        <li><img src="UYULogo.png" class="UYULogo"></img></li>
-        <li><a href="https://yuzhou1655.github.io/Home/" class="Button">Home</a></li>
-        <li><a href="#ThisShouldGoToGameDesignsPage" class="Button">Game Designs</a></li>
-        <li><a href="#ThisShouldGoToOtherProjectsPage" class="Button">Other Projects</a></li>
-        <li><a href="https://yuzhou1655.github.io/AboutMe/" class="Button">About Me</a></li>
-      </ul>
-    </div>
-  </nav>
+    <nav>
+        <div class="nav1">
+            <ul>
+                <li><img src="UYULogo.png" class="UYULogo"></li>
+                <li><a href="https://yuzhou1655.github.io/Home/" class="Button">Home</a></li>
+                <li class="dropdown">
+                    <a class="Button">Game Designs</a>
+                    <div class="dropdown-content">
+                        <a href="https://yuzhou1655.github.io/TimelyShot/">Timely Shot</a>
+                        <a href="https://yuzhou1655.github.io/StormRemnant/">Storm Remnant</a>
+                        <a href="https://yuzhou1655.github.io/BeforeTheRainstormZY/">Before the Rainstorm</a>
+                        <a href="https://yuzhou1655.github.io/DuckrossingZY/">Duckrossing</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="Button">Other Projects</a>
+                    <div class="dropdown-content">
+                        <a href="https://yuzhou1655.github.io/PhysicalComputings/">Physical Computings</a>
+                        <a href="https://yuzhou1655.github.io/VisualDesigns/">Visual Designs</a>
+                        <a href="https://yuzhou1655.github.io/EsportSpectatorship/">Esports Podcasts</a>
+                        <a href="https://yuzhou1655.github.io/MotionPictures/">Motion Pictures</a>
+                    </div>
+                </li>
+                <li><a href="#EML" class="Button">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
   <div class="sidebar">
     <a href="#top">Top</a>
     <a href="#BRF">Overview</a>
     <a href="#IDN">Ideation</a>
     <a href="#GP">GamePlay</a>
-    <a href="#NS">Next Step</a>
+    <a href="#NS">Other Levels</a>
   </div>
 
   <section id="Home" class="cover">
@@ -142,9 +191,9 @@
     <h1 class="subsubheader">NOTICE</h1>
     <p class="subcontent">
       Due to ongoing technical issues, the following videos and images are separately recorded and took in engine and do
-      not represent final quality. These videos and images are part of a stage progress report, if you are interested in
-      this project and looking forward to updates, here is the <a href="#NS" class="Button">FUTURE PLAN</a> and feel
-      free t reach out to me via <a href="#CTCT" class="Button">EMAIL</a>.
+      not represent final quality. These videos and images are part of a stage progress report. If you are interested in
+      this project and want to have conversation on designs, feel
+      free to reach out to me via <a href="#CTCT" class="Button">EMAIL</a>.
     </p>
     <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
 
@@ -194,7 +243,7 @@
   <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
 
   <section id="NS" class="Content">
-    <h2 class="subheader">Next Step</h2>
+    <h2 class="subheader">Other Levels</h2>
     <h2 class="subsubheader">Design of Area 3-2</h2>
     <div class="imgRow2">
       <div class="imgColumn2">
@@ -219,17 +268,6 @@
     </div>
     <p class="subcontent">When the rain began to pour, Sebastian and squirrel family seek shelter under cliff. Though they are safe from predators, the ground is shaken by the landslide. Good thing is no need to hurry here, take your time , be patient, step by step, beak by beak. Find out the steady path or wait for the inbetween of gusts, and take the jump.</p>
 
-
-
-    <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
-    <h2 class="subsubheader">Future Plan</h2>
-    <img class="imgMxl" alt="FuturePlan" src="Future Update Plan.png"></img>
-    <section class="subcontent">
-      <p>Over the next few months, we will continue to polish and improve the game and ensure that it will be an
-        immersive
-        and playful experience for everyone. </p>
-       <p>If you want to receive future periodical progress report, leave your email <a href="https://forms.gle/V3Vv13aEcHqaTaqKA" target="_blank" rel="noopener noreferrer">here<span style="font-size: 0.7em">(opens in a new tab)</span></a> , or send concerns to our emails <a class="Button">below</a>.</p>
-    </section>
   </section>
 
 
@@ -238,50 +276,50 @@
     <p class="content">Thank you for taking the time to explore this websit. We appreciate your interest and hope you found everything you were looking for. If you have any questions or feedback, please don't hesitate to reach out via email listed below. Happy browsing!</p>
 
 
-    <section id="CTCT" class="Contact">
-      <table class="Table">
-        <thead style="font-size:1.2vw;">
-          <tr>
-            <th style="font-size:2vw;">Yu Zhou</th>
-            <th> </th>
-            <th>Game Designs</th>
-            <th>Other Projects</th>
-            <th></th>
-          </tr>
-        </thead>
-  
-        <tbody style="font-size:1.5vw;">
-          <tr>
-            <td></td>
-            <td> </td>
-            <td><a href="#LinkToGDProject1" Class="Button">Timely Shot</a></td>
-            <td><a href="https://yuzhou1655.github.io/PhysicalComputings/" Class="Button">Physical Computings</a></td>
-          </tr>
-  
-          <tr>
-            <td> </td>
-            <td> </td>
-            <td><a href="https://yuzhou1655.github.io/BeforeTheRainstormZY/" Class="Button">Before the Rainstorm</a></td>
-            <td><a href="#LinkToVDC" Class="Button">Visual Designs</a></td>
-          </tr>
-  
-          <tr>
-            <td> yxz1655@miami.edu</td>
-            <td> </td>
-            <td><a href="https://yuzhou1655.github.io/DuckrossingZY/" Class="Button">Duckrossing</a></td>
-            <td><a href="#LinkToESP" Class="Button">Esports Podcasts</a></td>
-          </tr>
-  
-          <tr>
-            <td> zhylouis0606@gmail.com</td>
-            <td> </td>
-            <td></td>
-            <td><a href="#LinkToVID" Class="Button">Motion Pictures</a></td>
-          </tr>
-  
-  
-        </tbody>
-      </table>
+    <section class="Contact" id="EML">
+        <table class="Table">
+            <thead style="font-size:1.2vw;">
+                <tr>
+                    <th style="font-size:2vw;">Yu Zhou</th>
+                    <th> </th>
+                    <th>Game Designs</th>
+                    <th>Other Projects</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody style="font-size:1.5vw;">
+                <tr>
+                    <td></td>
+                    <td> </td>
+                    <td><a href="https://yuzhou1655.github.io/TimelyShot/" Class="Button">Timely Shot</a></td>
+                    <td><a href="https://yuzhou1655.github.io/PhysicalComputings/" Class="Button">Physical Computings</a></td>
+                </tr>
+
+                <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td><a href="https://yuzhou1655.github.io/StormRemnant/" Class="Button">Storm Remnants</a></td>
+                    <td><a href="https://yuzhou1655.github.io/VisualDesigns/" Class="Button">Visual Designs</a></td>
+                </tr>
+
+                <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td><a href="https://yuzhou1655.github.io/BeforeTheRainstormZY/" Class="Button">Before the Rainstorm</a></td>
+                    <td><a href="https://yuzhou1655.github.io/EsportSpectatorship/" Class="Button">Esports Podcasts</a></td>
+                </tr>
+
+                <tr>
+                    <td> yuzhou020606@163.com</td>
+                    <td> </td>
+                    <td><a href="https://yuzhou1655.github.io/DuckrossingZY/" Class="Button">Duckrossing</a></td>
+                    <td><a href="https://yuzhou1655.github.io/MotionPictures/" Class="Button">Motion Pictures</a></td>
+                </tr>
+
+
+            </tbody>
+        </table>
     </section>
     
 
